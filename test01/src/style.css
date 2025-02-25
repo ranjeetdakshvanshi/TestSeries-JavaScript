@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ecf0f3;
+}
+.outer-box {
+  padding: 30px;
+  border-radius: 20px;
+  background: #ecf0f3;
+  box-shadow: 10px 10px 20px #babecc, -10px -10px 20px #ffffff;
+  text-align: center;
+}
+.container {
+  display: flex;
+  gap: 20px;
+}
+.btn {
+  width: 140px;
+  height: 55px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(145deg, #ffffff, #d1d9e6);
+  box-shadow: 8px 8px 15px #babecc, -8px -8px 15px #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+}
+.btn:active {
+  box-shadow: inset 6px 6px 10px #babecc, inset -6px -6px 10px #ffffff;
+}
