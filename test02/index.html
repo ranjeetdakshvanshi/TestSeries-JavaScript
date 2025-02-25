@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events Handler</title>
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+  <body>
+    <div class="outer-box">
+      <h2 onclick="this.innerHTML = 'Ooops!'">Events Handler</h2>
+      <div class="container">
+          <button  ondblclick="alert(`Inline Event`)"  class="btn">First-1</button>
+          <button id="sec" class="btn">Second-2</button>
+          <button id="third" class="btn">Third-3</button>
+      </div>
+  </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
