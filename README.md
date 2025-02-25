@@ -1,3 +1,3 @@
 # JavaScript-TestSeries
- event: It is action or signal that's something has happend in webpage, we can apply events in javascript three way 
-![alt text](image.png)
+## 1. Events Handler
+ <a href="#"><img alt="events" src="https://github.com/user-attachments/assets/74aafc2d-9538-4ba8-9e6c-dd3a244c760f" /></a><br>
