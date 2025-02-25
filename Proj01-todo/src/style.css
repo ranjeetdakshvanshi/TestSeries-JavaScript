@@ -46,13 +46,13 @@ button:active {
 }
 ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 10px;
+  margin: 0px;
   flex-grow: 1;
   overflow-y: auto;
 }
 li {
-  padding: 15px;
+  padding: 10px;
   margin: 10px 0;
   background: #e0e5ec;
   border-radius: 10px;
