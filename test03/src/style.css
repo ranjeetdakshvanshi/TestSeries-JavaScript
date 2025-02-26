@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: #e0e5ec;
+  font-family: Arial, sans-serif;
+}
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.clock-container {
+  width: 260px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #333;
+  background: #e0e5ec;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff;
+  position: relative;
+  animation: glow 1.5s infinite alternate;
+}
+.clock-container h2 {
+  font-size: 1.5rem;
+  color: #333;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 4px 4px 10px rgba(255, 255, 255, 0.6);
+  margin-bottom: 5px;
+}
+@keyframes glow {
+  0% {
+      box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff, inset 4px 4px 10px #c5ceda, inset -4px -4px 10px #ffffff;
+  }
+  100% {
+      box-shadow: 14px 14px 25px #8a9db4, -14px -14px 25px #ffffff, inset 6px 6px 15px #c5ceda, inset -6px -6px 15px #ffffff;
+  }
+}
