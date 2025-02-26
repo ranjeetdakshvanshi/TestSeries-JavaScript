@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Timer</title>
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Digital Timer</h1>
+      <div class="timer" id="timer">00:00:00</div>
+      <button onclick="startTimer()">Start</button>
+      <button onclick="pauseTimer()">Pause</button>
+      <button onclick="resetTimer()">Reset</button>
+      <div class="preset-buttons">
+          <button onclick="setReverseTimer(30)">30 Sec</button>
+          <button onclick="setReverseTimer(60)">1 Min</button>
+          <button onclick="setReverseTimer(120)">2 Min</button>
+          <button onclick="setReverseTimer(300)">5 Min</button>
+          <button onclick="setReverseTimer(600)">10 Min</button>
+      </div>
+  </div>
+  </div>
+    <script  src="/src/main.js"></script>
+  </body>
+</html>
