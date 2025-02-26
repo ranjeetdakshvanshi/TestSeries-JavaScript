@@ -10,3 +10,15 @@ function updateClock() {
 }
 setInterval(updateClock, 1000);
 updateClock(); // Initial call
+
+
+    // OR
+
+
+// function currentTime(){
+//   let current=new Date().toLocaleTimeString();
+//   document.getElementById("clock").innerHTML=current;
+// }
+// setInterval(()=>{
+//   currentTime();
+// },1000)
