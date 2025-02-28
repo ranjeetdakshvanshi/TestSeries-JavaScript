@@ -1,63 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Periodic Table - Neomorphism</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #111;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: repeat(18, 1fr);
-            gap: 5px;
-            padding: 20px;
-            background: #222;
-            box-shadow: 10px 10px 20px #000, -10px -10px 20px #333;
-            border-radius: 10px;
-        }
-        .element {
-            width: 70px;
-            height: 70px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-size: 14px;
-            font-weight: bold;
-            text-align: center;
-            border-radius: 10px;
-            cursor: pointer;
-            background: #333;
-            box-shadow: 5px 5px 10px #111, -5px -5px 10px #444;
-            transition: 0.3s;
-        }
-        .element:hover {
-            box-shadow: inset 5px 5px 10px #111, inset -5px -5px 10px #444;
-            transform: scale(1.1);
-        }
-        .category-alkali { background: #ff6666; }
-        .category-alkaline { background: #ffcc66; }
-        .category-transition { background: #6666ff; }
-        .category-metalloids { background: #66ff66; }
-        .category-reactive { background: #ff66ff; }
-        .category-noble { background: #66ffff; }
-        .category-lanthanides, .category-actinides { background: #ff9933; }
-        .empty { visibility: hidden; }
-    </style>
-</head>
-<body>
-    <h1>Periodic Table</h1>
-    <div class="container">
-        <script>
+
             const elements = [
                 ["H",1,"reactive"], ["He",2,"noble"],
                 ["Li",3,"alkali"], ["Be",4,"alkaline"],
@@ -85,7 +26,4 @@
                 ["Mt",109,"transition"], ["Ds",110,"transition"], ["Rg",111,"transition"], ["Cn",112,"transition"], ["Nh",113,"metalloids"],
                 ["Fl",114,"metalloids"], ["Mc",115,"metalloids"], ["Lv",116,"metalloids"], ["Ts",117,"reactive"], ["Og",118,"noble"]
             ];
-        </script>
-    </div>
-</body>
-</html>
+        
