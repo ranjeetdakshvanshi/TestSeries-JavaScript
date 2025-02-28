@@ -23,12 +23,19 @@ const elements = [
     ["Es", 99, "actinides", 13, 7], ["Fm", 100, "actinides", 14, 7], ["Md", 101, "actinides", 15, 7], ["No", 102, "actinides", 16, 7], ["Lr", 103, "actinides", 17, 7]
 ];
 
-        const table = document.getElementById("periodicTable");
+            let getInfo;
+            const table = document.getElementById("periodicTable");
         elements.forEach(([symbol, number, category, col, row]) => {
             const elementDiv = document.createElement("div");
             elementDiv.classList.add("element", category);
             elementDiv.innerHTML = `<span>${number}</span> ${symbol}`;
             elementDiv.style.gridColumnStart = col;
             elementDiv.style.gridRowStart = row;
+            elementDiv.setAttribute()
             table.appendChild(elementDiv);
+            
         });
+        getInfo=(e)=>{
+            alert(e.target.innerText)
+        }
+        periodicTable.addEventListener("click",getInfo);
