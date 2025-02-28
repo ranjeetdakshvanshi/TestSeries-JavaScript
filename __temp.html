@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table - Neomorphism</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(18, 1fr);
+            gap: 5px;
+            padding: 20px;
+            background: #222;
+            box-shadow: 10px 10px 20px #000, -10px -10px 20px #333;
+            border-radius: 10px;
+        }
+        .element {
+            width: 70px;
+            height: 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            background: #333;
+            box-shadow: 5px 5px 10px #111, -5px -5px 10px #444;
+            transition: 0.3s;
+        }
+        .element:hover {
+            box-shadow: inset 5px 5px 10px #111, inset -5px -5px 10px #444;
+            transform: scale(1.1);
+        }
+        .category-alkali { background: #ff6666; }
+        .category-alkaline { background: #ffcc66; }
+        .category-transition { background: #6666ff; }
+        .category-metalloids { background: #66ff66; }
+        .category-reactive { background: #ff66ff; }
+        .category-noble { background: #66ffff; }
+        .category-lanthanides, .category-actinides { background: #ff9933; }
+        .empty { visibility: hidden; }
+    </style>
+</head>
+<body>
+    <h1>Periodic Table</h1>
+    <div class="container">
+        <script>
+            const elements = [
+                ["H",1,"reactive"], ["He",2,"noble"],
+                ["Li",3,"alkali"], ["Be",4,"alkaline"],
+                ["B",5,"metalloids"], ["C",6,"reactive"], ["N",7,"reactive"], ["O",8,"reactive"], ["F",9,"reactive"], ["Ne",10,"noble"],
+                ["Na",11,"alkali"], ["Mg",12,"alkaline"],
+                ["Al",13,"metalloids"], ["Si",14,"metalloids"], ["P",15,"reactive"], ["S",16,"reactive"], ["Cl",17,"reactive"], ["Ar",18,"noble"],
+                ["K",19,"alkali"], ["Ca",20,"alkaline"], ["Sc",21,"transition"], ["Ti",22,"transition"], ["V",23,"transition"], ["Cr",24,"transition"],
+                ["Mn",25,"transition"], ["Fe",26,"transition"], ["Co",27,"transition"], ["Ni",28,"transition"], ["Cu",29,"transition"], ["Zn",30,"transition"],
+                ["Ga",31,"metalloids"], ["Ge",32,"metalloids"], ["As",33,"metalloids"], ["Se",34,"reactive"], ["Br",35,"reactive"], ["Kr",36,"noble"],
+                ["Rb",37,"alkali"], ["Sr",38,"alkaline"], ["Y",39,"transition"], ["Zr",40,"transition"], ["Nb",41,"transition"], ["Mo",42,"transition"],
+                ["Tc",43,"transition"], ["Ru",44,"transition"], ["Rh",45,"transition"], ["Pd",46,"transition"], ["Ag",47,"transition"], ["Cd",48,"transition"],
+                ["In",49,"metalloids"], ["Sn",50,"metalloids"], ["Sb",51,"metalloids"], ["Te",52,"metalloids"], ["I",53,"reactive"], ["Xe",54,"noble"],
+                ["Cs",55,"alkali"], ["Ba",56,"alkaline"],
+                ["La",57,"lanthanides"], ["Ce",58,"lanthanides"], ["Pr",59,"lanthanides"], ["Nd",60,"lanthanides"], ["Pm",61,"lanthanides"],
+                ["Sm",62,"lanthanides"], ["Eu",63,"lanthanides"], ["Gd",64,"lanthanides"], ["Tb",65,"lanthanides"], ["Dy",66,"lanthanides"],
+                ["Ho",67,"lanthanides"], ["Er",68,"lanthanides"], ["Tm",69,"lanthanides"], ["Yb",70,"lanthanides"], ["Lu",71,"lanthanides"],
+                ["Hf",72,"transition"], ["Ta",73,"transition"], ["W",74,"transition"], ["Re",75,"transition"], ["Os",76,"transition"],
+                ["Ir",77,"transition"], ["Pt",78,"transition"], ["Au",79,"transition"], ["Hg",80,"transition"], ["Tl",81,"metalloids"],
+                ["Pb",82,"metalloids"], ["Bi",83,"metalloids"], ["Po",84,"metalloids"], ["At",85,"reactive"], ["Rn",86,"noble"],
+                ["Fr",87,"alkali"], ["Ra",88,"alkaline"],
+                ["Ac",89,"actinides"], ["Th",90,"actinides"], ["Pa",91,"actinides"], ["U",92,"actinides"], ["Np",93,"actinides"],
+                ["Pu",94,"actinides"], ["Am",95,"actinides"], ["Cm",96,"actinides"], ["Bk",97,"actinides"], ["Cf",98,"actinides"],
+                ["Es",99,"actinides"], ["Fm",100,"actinides"], ["Md",101,"actinides"], ["No",102,"actinides"], ["Lr",103,"actinides"],
+                ["Rf",104,"transition"], ["Db",105,"transition"], ["Sg",106,"transition"], ["Bh",107,"transition"], ["Hs",108,"transition"],
+                ["Mt",109,"transition"], ["Ds",110,"transition"], ["Rg",111,"transition"], ["Cn",112,"transition"], ["Nh",113,"metalloids"],
+                ["Fl",114,"metalloids"], ["Mc",115,"metalloids"], ["Lv",116,"metalloids"], ["Ts",117,"reactive"], ["Og",118,"noble"]
+            ];
+        </script>
+    </div>
+</body>
+</html>
